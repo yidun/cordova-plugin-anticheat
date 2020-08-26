@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="cordova-plugin-yidun-anticheat" version="1.0.0" xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>cordova-plugin-yidun-anticheat</name>
+    <js-module name="cordova-plugin-yidun-anticheat" src="www/cordova-plugin-yidun-anticheat.js">
+        <clobbers target="window.YidunAnticheat" />
+    </js-module>
+
+    <platform name="android">
+        <framework src="src/android/faceplatform-release.gradle" custom="true" type="gradleReference"/>
+        <lib-file src="src/android/netmobsecLib-4.4.3.1.aar" />
+        
+        <source-file src="src/android/AntiCheating.java" target-dir="src/com/netease/anticheat/cordovaplugin" />
+        <source-file src="src/android/KeepAliveCallbackContext.java" target-dir="src/com/netease/anticheat/cordovaplugin" />
+
+        <framework src="androidx.exifinterface:exifinterface:1.2.0" />
+      
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="NTESAnticheat">
+            <param name="android-package" value="com.netease.anticheat.cordovaplugin.AntiCheating" />
+            <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+            <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+            <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+            <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        </config-file>
+    </platform>
+</plugin>

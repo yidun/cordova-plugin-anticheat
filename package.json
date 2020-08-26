@@ -1,0 +1,23 @@
+{
+  "name": "cordova-plugin-yidun-anticheat",
+  "version": "1.0.0",
+  "description": "yidun anticheat cordova plugin",
+  "cordova": {
+    "id": "cordova-plugin-yidun-anticheat",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "cordova",
+    "ecosystem:cordova",
+    "cordova-android",
+    "android",
+    "yidun",
+    "anticheat",
+    "反作弊",
+    "易盾"
+  ],
+  "author": "yidun",
+  "license": "Apache 2.0"
+}
