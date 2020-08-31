@@ -1,12 +1,12 @@
 var exec = require('cordova/exec');
 
-var PLUGIN_NAME = "NTESAnticheat";
+var PLUGIN_NAME = "NTESGuardian";
 
 function isFunction(obj) {
   return !!(obj && obj.constructor && obj.call && obj.apply);
 };
 
-var YidunAnticheat = function(options, onCallback) {
+var YidunGuardian = function(options, onCallback) {
   if (!options) {
     if (isFunction(onCallback)) {
       onCallback(new Error ('productNumber is required'));
@@ -38,14 +38,14 @@ var YidunAnticheat = function(options, onCallback) {
 
 };
 
-YidunAnticheat.prototype.getToken = function(timeout) {
+YidunGuardian.prototype.getToken = function(timeout) {
   timeout = timeout || 3000;
   exec(this.onSuccess, this.onError, PLUGIN_NAME, "getToken", [timeout]);
 };
 
-YidunAnticheat.prototype.setSeniorCollectStatus = function(flag) {
+YidunGuardian.prototype.setSeniorCollectStatus = function(flag) {
   exec(this.onSuccess, this.onError, PLUGIN_NAME, "setSeniorCollectStatus", [flag]);
 };
 
-module.exports = YidunAnticheat;
+module.exports = YidunGuardian;
 

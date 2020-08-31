@@ -1,9 +1,9 @@
 {
-  "name": "cordova-plugin-yidun-anticheat",
+  "name": "cordova-plugin-yidun-guardian",
   "version": "1.0.0",
   "description": "yidun anticheat cordova plugin",
   "cordova": {
-    "id": "cordova-plugin-yidun-anticheat",
+    "id": "cordova-plugin-yidun-guardian",
     "platforms": [
       "android"
     ]

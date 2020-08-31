@@ -1,11 +1,11 @@
-# Cordova Plugin Yidun Anticheat
+# Cordova Plugin Yidun Guardian
 
 易盾反作弊cordova原生插件版，目前仅支持 Android
 
 ## Installation
 
 ```
-cordova plugin add cordova-plugin-yidun-anticheat
+cordova plugin add cordova-plugin-yidun-guardian
 
 ```
 
@@ -14,7 +14,7 @@ cordova plugin add cordova-plugin-yidun-anticheat
 ### 初始化
 ```js
   var $actionEl = document.getElementById('detectAction');  // 显示动作提示的元素
-  var instance = new YidunAnticheat({
+  var instance = new YidunGuardian({
           isCollectApk: false,  // Boolean, 是否允许采集本机已安装的软件，默认 false
           isCollectSensor: false,  // Boolean, 是否允许开始采集传感器实时数据，默认 false
           channel: '',  // String, APP渠道名称，默认空
@@ -55,5 +55,5 @@ cordova plugin add cordova-plugin-yidun-anticheat
 
 ## 简单示例app
 
-<a href="https://github.com/yidun/alive-cordova-plugin-demo">cordova-yidun-alive-detect-demo</a> for a complete working Cordova example for Android and iOS platforms.
+<a href="https://github.com/yidun/cordova-plugin-guardian-demo">cordova-plugin-guardian-demo</a> for a complete working Cordova example for Android platforms.
 
