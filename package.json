@@ -1,5 +1,5 @@
 {
-  "name": "@yidun/cordova-plugin-yidun-guardian",
+  "name": "@yidun/cordova-plugin-guardian",
   "version": "1.0.0",
   "description": "yidun anticheat cordova plugin",
   "cordova": {
