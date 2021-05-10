@@ -5,7 +5,7 @@
 ## Installation
 
 ```
-cordova plugin add cordova-plugin-yidun-guardian
+cordova plugin add @yidun/cordova-plugin-yidun-guardian
 
 ```
 

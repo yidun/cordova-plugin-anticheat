@@ -1,5 +1,5 @@
 {
-  "name": "cordova-plugin-yidun-guardian",
+  "name": "@yidun/cordova-plugin-yidun-guardian",
   "version": "1.0.0",
   "description": "yidun anticheat cordova plugin",
   "cordova": {
@@ -19,5 +19,8 @@
     "易盾"
   ],
   "author": "yidun",
-  "license": "Apache 2.0"
+  "license": "Apache 2.0",
+  "publishConfig": {
+    "access": "public"
+  }
 }
